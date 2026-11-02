@@ -6,6 +6,10 @@ A small defensive-security project that flags repeated failed logins and a succe
 
 **Python · JSONL · Log correlation · Incident triage**
 
+![Published browser demo](docs/screenshot.jpg)
+
+*Screenshot of the published interactive demo.*
+
 ## Run
 ```sh
 python cybersecurity/detect.py
