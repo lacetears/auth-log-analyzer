@@ -47,4 +47,4 @@ This detector does not identify distributed password spraying or correlate multi
 
 A [Wazuh lab guide](cybersecurity/README.md) and sample SSH rule are included as an extension. A live SIEM with Windows/Linux endpoints has not been deployed or verified. Wazuh's rule behavior is not assumed to be identical to this Python detector.
 
-[Implementation and AI-assistance notes](docs/development.md)
+[Development notes](docs/development.md)
