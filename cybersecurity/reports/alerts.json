@@ -1,0 +1,22 @@
+[
+  {
+    "rule": "repeated_login_failure",
+    "severity": "medium",
+    "timestamp": "2026-01-15T09:04:00Z",
+    "host": "lab-linux",
+    "source_ip": "192.0.2.10",
+    "user": "demo",
+    "failure_count": 5,
+    "window_seconds": 300
+  },
+  {
+    "rule": "success_after_failures",
+    "severity": "high",
+    "timestamp": "2026-01-15T09:05:00Z",
+    "host": "lab-linux",
+    "source_ip": "192.0.2.10",
+    "user": "demo",
+    "failure_count": 5,
+    "window_seconds": 300
+  }
+]
