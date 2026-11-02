@@ -1,0 +1,8 @@
+{"timestamp": "2026-01-15T09:00:00Z", "host": "lab-linux", "source_ip": "192.0.2.10", "user": "demo", "result": "failure"}
+{"timestamp": "2026-01-15T09:01:00Z", "host": "lab-linux", "source_ip": "192.0.2.10", "user": "demo", "result": "failure"}
+{"timestamp": "2026-01-15T09:02:00Z", "host": "lab-linux", "source_ip": "192.0.2.10", "user": "demo", "result": "failure"}
+{"timestamp": "2026-01-15T09:03:00Z", "host": "lab-linux", "source_ip": "192.0.2.10", "user": "demo", "result": "failure"}
+{"timestamp": "2026-01-15T09:04:00Z", "host": "lab-linux", "source_ip": "192.0.2.10", "user": "demo", "result": "failure"}
+{"timestamp": "2026-01-15T09:05:00Z", "host": "lab-linux", "source_ip": "192.0.2.10", "user": "demo", "result": "success"}
+{"timestamp": "2026-01-15T10:00:00Z", "host": "lab-windows", "source_ip": "192.0.2.20", "user": "analyst", "result": "failure"}
+{"timestamp": "2026-01-15T10:01:00Z", "host": "lab-windows", "source_ip": "192.0.2.20", "user": "analyst", "result": "success"}
