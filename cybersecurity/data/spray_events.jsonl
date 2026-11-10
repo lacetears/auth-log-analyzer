@@ -1,0 +1,5 @@
+{"timestamp": "2026-01-15T12:00:00Z", "host": "synthetic-server", "source_ip": "198.51.100.20", "user": "lab-user-0", "result": "failure"}
+{"timestamp": "2026-01-15T12:01:00Z", "host": "synthetic-server", "source_ip": "198.51.100.20", "user": "lab-user-1", "result": "failure"}
+{"timestamp": "2026-01-15T12:02:00Z", "host": "synthetic-server", "source_ip": "198.51.100.20", "user": "lab-user-2", "result": "failure"}
+{"timestamp": "2026-01-15T12:03:00Z", "host": "synthetic-server", "source_ip": "198.51.100.20", "user": "lab-user-3", "result": "failure"}
+{"timestamp": "2026-01-15T12:04:00Z", "host": "synthetic-server", "source_ip": "198.51.100.20", "user": "lab-user-4", "result": "failure"}
