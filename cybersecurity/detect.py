@@ -28,8 +28,9 @@ def normalize(event):
             raise ValueError('Timezone required')
         row['timestamp'] = timestamp.astimezone(timezone.utc).isoformat().replace('+00:00', 'Z')
         row['source_ip'] = str(ipaddress.ip_address(row['source_ip']))
-    except (ValueError, OverflowError) as error:
-        raise ValueError(f'Invalid timestamp or source_ip: {error}') from error
+    except (ValueError, OverflowError):
+        # Parser exceptions can include the supplied value. Keep rejection reports safe.
+        raise ValueError('Invalid timestamp or source_ip; use an offset timestamp and valid IP') from None
     return row
 
 

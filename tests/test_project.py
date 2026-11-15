@@ -121,3 +121,17 @@ def test_jsonl_errors_and_cli(tmp_path,capsys):
         security.main(['--input',str(source),'--output',str(source)])
     assert error.value.code==2
     assert source.read_text().endswith('null\n')
+
+
+@pytest.mark.parametrize('field', ['timestamp', 'source_ip'])
+def test_rejection_reasons_do_not_echo_sensitive_values(tmp_path, field):
+    marker = 'private-value-do-not-echo'
+    event = events()[0]
+    event[field] = marker
+    source = tmp_path / 'private.jsonl'
+    source.write_text(json.dumps(event) + '\n')
+    _, rejected = security.read_events(source, skip_invalid=True)
+    assert marker not in json.dumps(rejected)
+    with pytest.raises(ValueError) as error:
+        security.read_events(source)
+    assert marker not in str(error.value)
